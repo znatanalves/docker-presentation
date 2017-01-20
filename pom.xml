@@ -15,7 +15,6 @@
       <version>2.0.0</version>
     </dependency>
   </dependencies>
-
   <build>
     <plugins>
       <plugin>
@@ -27,7 +26,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>HelloDocker</mainClass>
+              <mainClass>hellodocker.Hello</mainClass>
               <classpathPrefix>dependency-jars/</classpathPrefix>
             </manifest>
           </archive>
@@ -54,11 +53,11 @@
             <configuration>
               <finalName>hellodocker</finalName>
               <descriptorRefs>
-                <descriptorRef>example</descriptorRef>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
               </descriptorRefs>
               <archive>
                 <manifest>
-                  <mainClass>HelloDocker</mainClass>
+                  <mainClass>hellodocker.Hello</mainClass>
                 </manifest>
               </archive>
             </configuration>

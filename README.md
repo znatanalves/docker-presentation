@@ -48,5 +48,17 @@ $ sudo systemctl status docker
 Navegue até o diretório `src` e rode o comando abaixo:
 
 ```
-$ [sudo] docker build -f Dockerfile -t hello/docker:8
+$ [sudo] docker build -f Dockerfile -t imagename:tag
+```
+
+Crie uma nova instância para a imagem
+
+```
+$ [sudo] docker run -p 4567:4567 imagename:tag
+```
+
+Acesse localhost:4567 e verá a mensagem:
+
+```
+Hello Docker
 ```
