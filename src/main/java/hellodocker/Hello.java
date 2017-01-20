@@ -8,5 +8,9 @@ public class Hello {
         get("/", (req, res) -> {
             return "Hello Docker";
         });
+
+        get("/hello/:name", (req, res) -> {
+        	return "Hello " + req.params(":name");
+        });
     }
 }

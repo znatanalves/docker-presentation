@@ -43,6 +43,36 @@ Para checar se o serviço do Docker está rodando
 $ sudo systemctl status docker
 ```
 
+# Principais comandos
+
+[Documentação Oficial](https://docs.docker.com/)
+
+```
+$ docker pull [PARAMS]
+```
+Baixa uma imagem dos repositórios do Docker
+
+```
+$ docker run [PARAMS]
+```
+Instância e executa um container com base em uma imagem
+
+```
+$ docker build [PARAMS]
+```
+Instância e cria seu container com base no seu Dockerfile
+
+```
+$ docker ps [PARAMS]
+```
+Lista os containers em execução
+
+```
+$ docker images
+```
+Lista as imagens baixadas
+
+
 # Rodando o projeto
 
 Navegue até o diretório `src` e rode o comando abaixo:
